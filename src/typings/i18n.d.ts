@@ -2,7 +2,7 @@ declare namespace I18nType {
   type LangType = "zh-cn" | "en";
 
   interface Schema {
-    demo: {
+    home: {
       description: string;
       tabbar: {
         home: string;

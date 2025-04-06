@@ -11,8 +11,8 @@
   </van-tabbar>
 </template>
 
-<script setup lang="ts">
-import { ref, reactive, computed } from "vue";
+<script lang="ts" setup>
+import { computed, reactive, ref } from "vue";
 import { $t } from "@/locales";
 
 const active = ref(0);
@@ -20,21 +20,28 @@ const active = ref(0);
 const tabbarData = reactive([
   {
     icon: "wap-home-o",
-    title: computed(() => $t("demo.tabbar.home")),
+    title: computed(() => $t("home.tabbar.home")),
     to: {
-      name: "Demo"
+      name: "Home"
     }
   },
   {
     icon: "gem-o",
-    title: computed(() => $t("demo.tabbar.tools")),
+    title: computed(() => $t("home.tabbar.audit")),
     to: {
-      name: "Tools"
+      name: "Audit"
+    }
+  },
+  {
+    icon: "gem-o",
+    title: computed(() => $t("home.tabbar.finding")),
+    to: {
+      name: "Finding"
     }
   },
   {
     icon: "user-o",
-    title: computed(() => $t("demo.tabbar.about")),
+    title: computed(() => $t("home.tabbar.about")),
     to: {
       name: "About"
     }

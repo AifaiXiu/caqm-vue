@@ -1,28 +1,36 @@
 import Layout from "@/layout/index.vue";
 import type { RouteRecordRaw } from "vue-router";
-import Demo from "@/views/demo/index.vue";
+import Home from "@/views/home/index.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "root",
     component: Layout,
-    redirect: { name: "Demo" },
+    redirect: { name: "Home" },
     children: [
       {
-        path: "demo",
-        name: "Demo",
-        component: Demo,
+        path: "home",
+        name: "Home",
+        component: Home,
         meta: {
           title: "主页"
         }
       },
       {
-        path: "tools",
-        name: "Tools",
-        component: () => import("@/views/tools/index.vue"),
+        path: "audit",
+        name: "Audit",
+        component: () => import("@/views/audit/index.vue"),
         meta: {
-          title: "工具"
+          title: "审计"
+        }
+      },
+      {
+        path: "finding",
+        name: "Finding",
+        component: () => import("@/views/finding/index.vue"),
+        meta: {
+          title: "不符合项"
         }
       },
       {

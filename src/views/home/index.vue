@@ -1,27 +1,27 @@
-<script setup lang="ts" name="Demo">
+<script lang="ts" name="Demo" setup>
 import { ref, watch } from "vue";
-import { $t, $locale } from "@/locales";
+import { $locale, $t } from "@/locales";
 
 const list = ref<string[]>([]);
 
 const updateList = () => {
   list.value = [
-    `✔ ⚡ ${$t("demo.details.vue3")}`,
-    `✔ 🍕 ${$t("demo.details.typescript")}`,
-    `✔ ✨ ${$t("demo.details.vant")}`,
-    `✔ 🌀 ${$t("demo.details.tailwindcss")}`,
-    `✔ 🍍 ${$t("demo.details.pinia")}`,
-    `✔ 🌓 ${$t("demo.details.darkmode")}`,
-    `✔ 🧀 ${$t("demo.details.i18n")}`,
-    `✔ ${$t("demo.details.router")}`,
-    `✔ ${$t("demo.details.icon")}`,
-    `✔ ${$t("demo.details.vw")}`,
-    `✔ ${$t("demo.details.axios")}`,
-    `✔ ${$t("demo.details.gzip")}`,
-    `✔ ${$t("demo.details.mock")}`,
-    `✔ ${$t("demo.details.eslint")}`,
-    `✔ ${$t("demo.details.loading")}`,
-    `✔ ${$t("demo.details.eruda")}`
+    `✔ ⚡ ${$t("home.details.vue3")}`,
+    `✔ 🍕 ${$t("home.details.typescript")}`,
+    `✔ ✨ ${$t("home.details.vant")}`,
+    `✔ 🌀 ${$t("home.details.tailwindcss")}`,
+    `✔ 🍍 ${$t("home.details.pinia")}`,
+    `✔ 🌓 ${$t("home.details.darkmode")}`,
+    `✔ 🧀 ${$t("home.details.i18n")}`,
+    `✔ ${$t("home.details.router")}`,
+    `✔ ${$t("home.details.icon")}`,
+    `✔ ${$t("home.details.vw")}`,
+    `✔ ${$t("home.details.axios")}`,
+    `✔ ${$t("home.details.gzip")}`,
+    `✔ ${$t("home.details.mock")}`,
+    `✔ ${$t("home.details.eslint")}`,
+    `✔ ${$t("home.details.loading")}`,
+    `✔ ${$t("home.details.eruda")}`
   ];
 };
 updateList();
@@ -32,8 +32,8 @@ watch(() => $locale.value, updateList);
 <template>
   <div class="demo-content px-[12px]">
     <img
-      class="block w-[120px] mx-auto mb-[20px] pt-[30px]"
       alt="Vue logo"
+      class="block w-[120px] mx-auto mb-[20px] pt-[30px]"
       src="~@/assets/logo_melomini.png"
     />
     <div class="pl-[12px] border-l-[3px] border-[color:#41b883]">
@@ -50,7 +50,7 @@ watch(() => $locale.value, updateList);
     <div
       class="text-[14px] py-[2px] px-[10px] rounded-[4px] bg-[var(--color-block-background)] mt-[14px]"
     >
-      <p class="my-[14px] leading-[24px]">🌱 {{ $t("demo.description") }}</p>
+      <p class="my-[14px] leading-[24px]">🌱 {{ $t("home.description") }}</p>
     </div>
 
     <div class="demo-main">
