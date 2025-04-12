@@ -1,8 +1,10 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useDarkMode, useToggleDarkMode } from "@/hooks/useToggleDarkMode";
 import { ref } from "vue";
 import { setLocale } from "@/locales";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const onClickDarkMode = () => {
   useToggleDarkMode();
 };
@@ -18,13 +20,13 @@ const onSelectLang = action => {
 </script>
 
 <template>
-  <van-nav-bar fixed placeholder>
+  <van-nav-bar fixed left-arrow placeholder @click-left="router.back()">
     <template #right>
       <van-popover
         v-model:show="showPopover"
         :actions="langOptions"
-        @select="onSelectLang"
         placement="bottom-end"
+        @select="onSelectLang"
       >
         <template #reference>
           <svg-icon class="text-[18px] mr-[12px]" name="lang" />
@@ -32,12 +34,12 @@ const onSelectLang = action => {
       </van-popover>
 
       <svg-icon
-        class="text-[18px]"
         :name="useDarkMode() ? 'light' : 'dark'"
+        class="text-[18px]"
         @click="onClickDarkMode"
       />
     </template>
   </van-nav-bar>
 </template>
 
-<style scoped></style>
+<style lang="less" scoped></style>

@@ -1,11 +1,7 @@
-<script setup lang="ts">
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
-  $END$
+  <div>这是用户管理页面</div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

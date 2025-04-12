@@ -1,35 +1,49 @@
 {
   "home": {
-    "description": "基于 Vue3 全家桶、TypeScript、Vite 构建工具，开箱即用的 H5 移动端项目基础模板。",
     "tabbar": {
       "home": "首页",
       "audit": "审计",
       "finding": "不符合项",
       "about": "关于"
     },
-    "details": {
-      "vue3": "Vue3 + Vite4",
-      "typescript": "TypeScript",
-      "vant": "Vant4 组件库",
-      "tailwindcss": "Tailwindcss 原子类框架",
-      "pinia": "Pinia 状态管理",
-      "darkmode": "支持深色模式",
-      "i18n": "支持 i18n",
-      "router": "Vue-router 4",
-      "icon": "支持 SVG 图标自动注册组件",
-      "vw": "vw 视口适配",
-      "axios": "Axios 封装",
-      "gzip": "打包资源 gzip 压缩",
-      "mock": "开发环境支持 Mock 数据",
-      "eslint": "ESLint",
-      "loading": "首屏加载动画",
-      "eruda": "开发环境调试面板"
+    "about": {
+      "username": "用户名",
+      "role": "角色",
+      "changepwd": "修改密码",
+      "dataitem": "数据项配置",
+      "user": "用户管理",
+      "company": "公司管理",
+      "file": "文件管理"
     }
   },
   "tools": {
     "successBtn": "成功请求",
     "errorBtn": "失败请求",
     "reqOK": "请求成功",
-    "reqErr": "请求失败"
+    "reqErr": "请求失败",
+    "deleteOK": "删除成功",
+    "deleteErr": "删除失败"
+  },
+  "dataitem": {
+    "dataitem": "数据项",
+    "chosedataitem": "默认是机场",
+    "airport": "机场",
+    "auditmethod": "审计方法",
+    "company": "公司",
+    "findingtype": "不符合项类型",
+    "dept": "部门",
+    "process": "流程",
+    "risksource": "风险源",
+    "rootanalyze": "根源分析",
+    "parent": "上级"
+  },
+  "table": {
+    "value": "值",
+    "action": "操作",
+    "edit": "修改",
+    "delete": "删除",
+    "add": "添加",
+    "cancel": "取消",
+    "confirm": "确定"
   }
 }
